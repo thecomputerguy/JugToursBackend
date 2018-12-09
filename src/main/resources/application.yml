@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    active: dev
+  security:
+    oauth2:
+      client:
+        registration:
+          okta:
+            client-id: {}
+            client-secret: {}
+            scope: openid, email, profile
+        provider:
+          okta:
+            issuer-uri: {}
